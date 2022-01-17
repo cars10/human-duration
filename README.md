@@ -1,8 +1,8 @@
 # human-duration
 
-![Crates.io](https://img.shields.io/crates/d/human-duration)
+[![Crates.io](https://img.shields.io/crates/d/human-duration)](https://crates.io/crates/human-duration)
 ![Crates.io](https://img.shields.io/crates/l/human-duration)
-![docs.rs](https://img.shields.io/docsrs/human-duration)
+[![docs.rs](https://img.shields.io/docsrs/human-duration)](https://docs.rs/human-duration)
 
 human-duration converts a `std::time::Duration` to a human readable string.
 
