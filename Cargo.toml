@@ -1,0 +1,23 @@
+[package]
+name = "human-duration"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+keywords = ["duration", "human", "pretty"]
+homepage = "https://github.com/cars10/human-duration"
+repository = "https://github.com/cars10/human-duration"
+documentation = "https://docs.rs/human-duration"
+authors = ["Carsten König <carstenkoenig92@gmail.com>"]
+categories = ["date-and-time"]
+description = "human-duration converts a std::time::Duration to a human readable string."
+
+[dependencies]
+
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "human_duration"
+harness = false
