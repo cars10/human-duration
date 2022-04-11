@@ -6,6 +6,8 @@
 
 human-duration converts a `std::time::Duration` to a human readable string.
 
+[Documentation](https://docs.rs/human-duration) | [Github](https://github.com/cars10/human-duration) | [Crates.io](https://crates.io/crates/human-duration)
+
 ## Examples
 
 ```rust
@@ -42,6 +44,14 @@ use human_duration::human_duration;
 let duration = std::time::Duration::new(120, 0);
 println!(human_duration(&duration));
 ```
+
+## Comparing with other crates
+
+| Crate          | Duration::new(0, 0) | Duration::new(0, 5_000_000) | Duration::new(5, 0) | Duration::new(34_536_000, 0) | Duration::new(86_400, 337_000_000) |
+|----------------|---------------------|-----------------------------|---------------------|------------------------------|------------------------------------|
+| human-duration | 0ms                 | 5ms                         | 5s 0ms              | 1y 1mon 4d 7h 20m 0s 0ms     | 1d 0h 0m 0s 337ms                  |
+| [humantime](https://crates.io/crates/humantime)      | 0s                  | 5ms                         | 5s                  | 1year 1month 4days 46m 24s   | 1day 337ms                         |
+|[ time-humanize](https://crates.io/crates/time-humanize)  | now                 | now                         | now                 | in a year                    | in a day                           |
 
 ## License
 
